@@ -1,7 +1,12 @@
     <div class="card h-100 shadow-sm">
+      <div class="image position-relative" style="cursor: pointer;">
         <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
-
-
+        <div class="d-flex align-items-center justify-content-center hover-overlay" style="margin-top: 5px;">
+          <button type="button" class="btn btn-primary fa fa-shopping-cart mr-2"></button>
+          <button routerLink="/shop/{{product.id}}" type="button" class="btn btn-primary">View</button>
+      </div>
+    
+      </div>
       <div class="card-body">
             <a  routerLink="/shop/{{product.id}}">
                 <h6 class="text-uppercase">
@@ -9,11 +14,8 @@
                 </h6>
             </a>
             <span class="mb-2">{{product.price | currency}}</span>
-        
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-outline-secondary" routerLink="/shop/{{product.id}}">View</button>
-            <button routerLink="/shop/{{product.id}}" type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
           </div>
           <small class="text-muted"></small>
         </div>
