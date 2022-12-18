@@ -8,7 +8,6 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/Interceptors/error.interceptor';
-import { ShopModule } from './shop/shop.module';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { LoadingInterceptor } from './core/Interceptors/loading.interceptor';
 
