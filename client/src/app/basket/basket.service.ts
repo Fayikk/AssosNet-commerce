@@ -21,14 +21,14 @@ export class BasketService {
 
   constructor(private http:HttpClient) { }
 
-  getBasket(id : string){
+  getBasket(id: string) {
     return this.http.get(this.baseUrl + 'basket?id=' + id)
       .pipe(
-        map((basket:IBasket) => 
-        this.basketSource.next(basket),
-        this.calculateTotals()
-        ),
-        );
+        map((basket: IBasket) => {
+          this.basketSource.next(basket);
+          this.calculateTotals();
+        }),
+      );
   }
 
   setBasket(basket : IBasket){

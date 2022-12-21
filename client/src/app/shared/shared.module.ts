@@ -5,16 +5,25 @@ import { PagingHeaderComponent } from './component/paging-header/paging-header.c
 import { PagerComponent } from './component/pager/pager.component';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
 import { OrderTotalsComponent } from './component/order-totals/order-totals.component' 
+import { ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TextInputComponent } from './component/text-input/text-input.component';
+
+
+
 @NgModule({
   declarations: [
     PagingHeaderComponent,
     PagerComponent,
-    OrderTotalsComponent
+    OrderTotalsComponent,
+    TextInputComponent
   ],
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
-    CarouselModule
+    CarouselModule.forRoot(),
+    ReactiveFormsModule,
+    BsDropdownModule.forRoot()  
   ]
   ,
   exports:[
@@ -22,7 +31,10 @@ import { OrderTotalsComponent } from './component/order-totals/order-totals.comp
     PagingHeaderComponent,
     PagerComponent,
     CarouselModule,
-    OrderTotalsComponent
+    OrderTotalsComponent,
+    ReactiveFormsModule,
+    BsDropdownModule,
+    TextInputComponent
 
   ]
 })
