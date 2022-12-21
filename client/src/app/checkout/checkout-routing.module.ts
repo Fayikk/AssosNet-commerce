@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { CheckoutComponent } from './checkout.component';
 
-const routes: Routes = [
-  {path:'',component:CheckoutComponent}
-]
+const routes: Routes=[{path:'',component:CheckoutComponent}]
 
 @NgModule({
   declarations: [],
