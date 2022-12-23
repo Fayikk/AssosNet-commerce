@@ -9,6 +9,14 @@ import { HomeModule } from './home/home.module';
 import { ErrorInterceptor } from './core/Interceptors/error.interceptor';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { LoadingInterceptor } from './core/Interceptors/loading.interceptor';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import { JwtInterceptor } from './core/Interceptors/jwt.interceptor';
+ 
+ 
+ 
+
+
+
 
 @NgModule({
   declarations: [
@@ -22,11 +30,13 @@ import { LoadingInterceptor } from './core/Interceptors/loading.interceptor';
     CoreModule,
     BrowserAnimationsModule,
     HomeModule,
-    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
+    CdkStepperModule
   ],
   providers: [
     {provide:HTTP_INTERCEPTORS,useClass : ErrorInterceptor , multi:true},
-    {provide:HTTP_INTERCEPTORS,useClass : LoadingInterceptor , multi:true}
+    {provide:HTTP_INTERCEPTORS,useClass : LoadingInterceptor , multi:true},
+    {provide:HTTP_INTERCEPTORS,useClass : JwtInterceptor , multi:true}
   ],
   bootstrap: [AppComponent]
 })
