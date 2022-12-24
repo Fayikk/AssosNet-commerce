@@ -4,3 +4,15 @@
 ![Screenshot_13](https://user-images.githubusercontent.com/108293938/209442366-d0b90fb7-95f3-4e11-9f6c-4db0a993be49.png)
 ![Screenshot_14](https://user-images.githubusercontent.com/108293938/209442368-3fb2608b-7dc9-4c35-a65d-e69410d66d11.png)
 ![Screenshot_15](https://user-images.githubusercontent.com/108293938/209442369-516f933c-8395-4f75-8752-9bf4bde3b8be.png)
+
+
+if you want take this project.You must only while fork this project.
+->open terminal
+->cd "solutionName"
+->cd Client
+->npm install
+For compile run
+->cd API and "dotnet run"
+->cd Client and "ng serve --open" 
+ETC
+Have a fun :)
