@@ -16,3 +16,6 @@ For compile run
 ->cd Client and "ng serve --open" 
 ETC
 Have a fun :)
+
+
+and of course you must create new Stripe's account and config app.settings.json for new keys ;)
