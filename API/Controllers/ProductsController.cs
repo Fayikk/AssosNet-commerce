@@ -70,5 +70,8 @@ namespace API.Controllers
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes(){
             return Ok(await _productTypeRepo.ListAllAsync());
         }
+
+
+       
     }
 }
